@@ -12,6 +12,9 @@ def character_num(text_as_string):
         else:
             character_track[character] = 1
     return character_track
-            
-
-   
+def sort_dicts(character_track):
+    def sort_on(character_track):
+        return character_track["num"]
+    sorted_dicts = [
+        {character: ""}
+    ]
