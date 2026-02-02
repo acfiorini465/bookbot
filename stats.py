@@ -19,6 +19,11 @@ def convert_dict_to_list(character_track):
         item = {"char": char, "num": count}
         sorted_char_list.append(item)
 
+    def sort_by_num(item):
+        return item["num"]
+    
+    sorted_char_list.sort(sort_by_num=item, reverse=True)
+
     return sorted_char_list
 def sort_dicts(character_track):
     def sort_on(character_track):
