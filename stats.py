@@ -12,6 +12,14 @@ def character_num(text_as_string):
         else:
             character_track[character] = 1
     return character_track
+def convert_dict_to_list(character_track):
+    sorted_char_list = []
+
+    for char, count in character_track.items():
+        item = {"char": char, "num": count}
+        sorted_char_list.append(item)
+
+    return sorted_char_list
 def sort_dicts(character_track):
     def sort_on(character_track):
         return character_track["num"]
