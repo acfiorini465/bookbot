@@ -22,7 +22,7 @@ def convert_dict_to_list(character_track):
     def sort_by_num(item):
         return item["num"]
     
-    sorted_char_list.sort(sort_by_num=item, reverse=True)
+    sorted_char_list.sort(key=sort_by_num, reverse=True)
 
     return sorted_char_list
 def sort_dicts(character_track):

@@ -9,7 +9,17 @@ def main():
     num_words = word_count(book_text)
     character_dict = character_num(book_text)
     sorted_chars_list = convert_dict_to_list(character_dict)
-    print(f"{num_words} words found in the document")
-    print(character_dict)
+    print("============ BOOKBOT ============")
+    print("Analyzing book found at {path_to_file}...")
+    print("----------- Word Count ----------")
+    print(f"Found {num_words} total words")
+    print("--------- Character Count -------")
+
+    for item in sorted_chars_list:
+        if not item["char"].isalpha():
+            continue
+        print(f"{item['char']}: {item['num']}")
+
+    print("============= END ===============")
 if __name__ == "__main__":
     main()
