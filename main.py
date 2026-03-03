@@ -10,7 +10,7 @@ def main():
     character_dict = character_num(book_text)
     sorted_chars_list = convert_dict_to_list(character_dict)
     print("============ BOOKBOT ============")
-    print("Analyzing book found at {path_to_file}...")
+    print(f"Analyzing book found at {path_to_file}...")
     print("----------- Word Count ----------")
     print(f"Found {num_words} total words")
     print("--------- Character Count -------")
